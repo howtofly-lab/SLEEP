@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="input.css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  </head>
+
+  <body>
+    <form action="" id="submitTimes">
+        <h3>Enter your sleep interval</h3>
+        <label for="sleepTime">Sleep Time:</label>
+        <input type = "datetime-local" id="sleepTime" name="sleepTime"><br></br>
+        <label for="wakeTime">Wake Time:</label>
+        <input type = "datetime-local" id="wakeTime" name="wakeTime"><br></br>
+        <button type="submit" id="submit-btn">Submit</button>
+    </form>
+    <div id="blocked-message" class="hidden">
+      <h3>Active Sleep Session</h3>
+      <p>You can't change times during a sleep session.</p>
+      <p>Try again when it is your wake time.</p>
+      <label for="entered-sleep">Sleep Time:</label>
+      <p id ="entered-sleep"></p><br></br>
+      <label for="entered-wake">Wake Time:</label>
+      <p id ="entered-wake"></p><br></br>
+    </div>
+    <script src="input.js"></script>
+  </body>
+</html>
